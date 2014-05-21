@@ -27,7 +27,10 @@
     <ClInclude Include="LeapTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LeapMotionListener.h">
+    <ClInclude Include="ManagedListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,7 +47,10 @@
     <ClCompile Include="LeapTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LeapMotionListener.cpp">
+    <ClCompile Include="ManagedListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeListener.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

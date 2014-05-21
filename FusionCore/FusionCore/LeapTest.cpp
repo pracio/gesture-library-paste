@@ -1,28 +1,30 @@
 #include "stdafx.h"
 #include "LeapTest.h"
 
+namespace FusionCore{
 
-LeapTest::LeapTest()
-{
-	mController = new Leap::Controller();
-}
-
-
-LeapTest::~LeapTest()
-{
-}
+	LeapTest::LeapTest()
+	{
+		mController = new Controller();
+		listener = gcnew ManagedListener(*mController);
+	}
 
 
-void LeapTest::Initialize()
-{
-}
+	LeapTest::~LeapTest()
+	{
+		this->!LeapTest();
+	}
 
+	LeapTest::!LeapTest(){
+		delete mController;
+	}
 
-void LeapTest::Start()
-{
-}
+	Controller* LeapTest::GetController(){
+		return mController;
+	}
 
+	void LeapTest::AddListener(ManagedCallback ^_m){
+		listener->realCallback += _m;
+	}
 
-void LeapTest::Stop()
-{
 }

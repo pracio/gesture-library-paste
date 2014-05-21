@@ -151,16 +151,18 @@ xcopy /yr "$(SolutionDir)\..\TobiiEyeX\lib\x64\Tobii.EyeX.Client.dll" "$(TargetD
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FusionCore.h" />
-    <ClInclude Include="LeapMotionListener.h" />
     <ClInclude Include="LeapTest.h" />
+    <ClInclude Include="ManagedListener.h" />
+    <ClInclude Include="NativeListener.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="FusionCore.cpp" />
-    <ClCompile Include="LeapMotionListener.cpp" />
     <ClCompile Include="LeapTest.cpp" />
+    <ClCompile Include="ManagedListener.cpp" />
+    <ClCompile Include="NativeListener.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

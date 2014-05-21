@@ -1,13 +1,30 @@
 // FusionCore.h
+#ifndef __FUSION_CORE__
+#define __FUSION_CORE__
 
-#pragma once
+#include "LeapTest.h"
+#using<mscorlib.dll>
+#using<System.Windows.Forms.dll> 
+
+#pragma managed
 
 using namespace System;
+using namespace System::Windows::Forms;
 
 namespace FusionCore {
 
-	public ref class Class1
+	public ref class Engine
 	{
-		// TODO: Add your methods for this class here.
+	public:
+		Engine();
+		~Engine();
+		void Start();
+		void Stop();
+
+	private:
+		LeapTest ^mLeap;
+		void onMessage(NativeEventType type);
 	};
 }
+
+#endif
